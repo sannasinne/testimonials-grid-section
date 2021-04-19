@@ -1,3 +1,5 @@
+/* Basic styles */
+
 *, *::before, *::after {
   box-sizing: inherit;
 }
@@ -7,17 +9,89 @@ html {
 }
 
 :root {
-  Moderate violet: hsl(263, 55%, 52%)
-Very dark grayish blue: hsl(217, 19%, 35%)
-Very dark blackish blue: hsl(219, 29%, 14%)
-White: hsl(0, 0%, 100%)
-Light gray: hsl(0, 0%, 81%)
-Light grayish blue: hsl(210, 46%, 95%)
+  --moderate-violet: hsl(263, 55%, 52%);
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(0, 0%, 81%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
 }
 
 body {
-
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  margin: 0;
+  padding: 0;
 }
+
+section {
+  background: var(--light-grayish-blue);
+  padding: 20px;
+}
+
+/* Card styles */
+
+.card {
+  padding: 20px 40px 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+.card h2 {
+  font-size: 20px;
+}
+
+.card p {
+  font-size: 13px;
+  padding: 0;
+  margin: 0;
+}
+
+.card .name {
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.card img {
+  border-radius: 50%;
+  border: 3px solid hsla(0, 0%, 100%, 0.2);
+  width: 40px;
+}
+
+.card-daniel {
+  color: var(--white);
+  background-color: var(--moderate-violet);
+  background-image: url(../images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 90% 0%;
+}
+
+.card-jonathan {
+  color: var(--white);
+  background: var(--very-dark-grayish-blue);
+}
+
+.card-jeanette,
+.card-kira {
+  background: var(--white);
+}
+
+.card-patrick {
+  color: var(--white);
+  background: var(--very-dark-blackish-blue);
+}
+
+.card .status {
+  color: hsla(0, 0%, 100%, 0.5);
+}
+
+.card .quotation {
+  color: hsla(0, 0%, 100%, 0.3);
+}
+
+
+
+
 
 
 /* Attribution */
