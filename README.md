@@ -46,4 +46,4 @@ I still want to challenge myself with different flexbox and grid projects.
 
 ## Author
 
-- Frontend Mentor - [@sannasinne](https://www.frontendmentor.io/profile/sannasinne/
+- Frontend Mentor - [@sannasinne](https://www.frontendmentor.io/profile/sannasinne/)
