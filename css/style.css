@@ -31,9 +31,15 @@ section {
 /* Card styles */
 
 .card {
-  padding: 20px 40px 20px;
+  padding: 20px 37px 20px;
   margin-bottom: 30px;
   border-radius: 10px;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .card h2 {
@@ -52,10 +58,18 @@ section {
   margin: 0;
 }
 
+.card-name {
+  padding-left: 15px;
+}
+
 .card img {
   border-radius: 50%;
   border: 3px solid hsla(0, 0%, 100%, 0.2);
   width: 40px;
+}
+
+.card-patrick img {
+  border: 3px solid hsla(263, 55%, 52%, 0.5);
 }
 
 .card-daniel {
@@ -73,6 +87,7 @@ section {
 
 .card-jeanette,
 .card-kira {
+  color: var(--very-dark-grayish-blue);
   background: var(--white);
 }
 
@@ -81,15 +96,34 @@ section {
   background: var(--very-dark-blackish-blue);
 }
 
-.card .status {
+.card-daniel .status,
+.card-jonathan .status,
+.card-patrick, .status {
   color: hsla(0, 0%, 100%, 0.5);
 }
 
-.card .quotation {
+.card-daniel .quotation,
+.card-jonathan .quotation,
+.card-patrick .quotation {
   color: hsla(0, 0%, 100%, 0.3);
 }
 
+.card-patrick .name,
+.card-patrick h2 {
+  color: var(--white);
+}
 
+.card-jeanette .status,
+.card-kira .status {
+  color: hsla(217, 19%, 35%, 0.5);
+}
+
+.card-jeanette .quotation,
+.card-kira .quotation {
+  color: hsla(217, 19%, 35%, 0.7);
+}
+
+/* Desktop styles */
 
 
 
@@ -97,8 +131,9 @@ section {
 /* Attribution */
 .attribution { 
   font-size: 11px; 
-  text-align: center; 
+  text-align: center;
+  color: var(--very-dark-grayish-blue); 
 }
 .attribution a { 
-  color: hsl(228, 45%, 44%); 
+  color: var(--moderate-violet); 
 }
